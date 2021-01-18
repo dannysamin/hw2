@@ -2,35 +2,63 @@
     <html>
     <head>
         <title> FC BARCELONA STORE</title>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
     </head>    
     <body>
-        <h1>FC BARCELONA jerseys</h1>
-        <p> Go <a href="index.html">Home.</a></p>
-        <p> Learn <a href="Aboutus.html">About us.</a></p>
-        <table>
-            <tr>
-                <td>
-                    <h3> Home Jersey</h3>
-                    <p> 
+        <div class="mt:p-16 p-4">
+            <div class="flex">
+              <h1 class="w-full font-bold text-center text-red-500 text-2xl"> FC BARCELONA Jerseys </h1>
+            </div>
+        
+        <div class="mt-16 md:flex md:space-x-4">
+            <div class="md:w-1/2">
+                <div class="space-y-4 md:mt-0 mt-8">
+                    <h2 class="font-bold text-center text-4xl"> Home Jersey</h2>
+                    <div>
                         <img src="https://www.imagehandler.net/preview/?istyle=0000&fmt=jpg&w=2000&h=2000&cmp=100&c=999&img=A1040047000&iset=0100&iindex=0007&retBlank=1x1">
-                    </p>
+                    </div>
                     <ul>
-                        <li> 100% Cotton.</li>
-                        <li> $95</li>
+                        <li class= "font-bold text-center text-3xl"> 100% Cotton.</li>
+                        <li class= "font-bold text-3xl text-center text-blue-500 "> $95</li>
                     </ul>
-                </td>
-                <td>
-                    <h3> Away Jersey</h3>
-                    <p> 
+                </div>
+            </div>
+        
+
+       
+            <div class="md:w-1/2">
+                <div class="space-y-4 md:mt-0 mt-8">
+                    <h2 class="font-bold text-center text-4xl"> Away Jersey</h2>
+                    <div>
                         <img src="https://www.imagehandler.net/preview/?istyle=0000&fmt=jpg&w=2000&h=2000&cmp=100&c=999&img=A1039584000&iset=0100&iindex=0007&retBlank=1x1">
-                    </p>
+                    </div>
                     <ul>
-                        <li> 100% Cotton.</li>
-                        <li> $85</li>
+                        <li class= "font-bold text-center text-3xl"> 100% Cotton.</li>
+                        <li class= "font-bold text-3xl text-center text-blue-500" > $85</li>
+           
                     </ul>
-                </td>
-            </tr>
-        </table>
-           </p>
+                </div>
+            </div>
+        </div>
+        
+        <h1 class="my-16 font-bold text-3xl text-center">Ready to Order?</h1>
+    <form netlify>
+      <label class="block mt-4 font-bold" for="name">Your name?</label>
+      <input class="p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500
+      focus:border-purple-500" type="text" id="name" name="name">
+
+      <label class="block mt-4 font-bold" for="email">Your email?</label>
+      <input class="p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500
+      focus:border-purple-500" type="text" id="email" name="email">
+    
+      <label class="block mt-4 font-bold" for="order">What would you like to order?</label>
+      <textarea rows="6" class="p-2 w-full border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500
+      focus:border-purple-500" id="order" name="order"></textarea>
+    
+      <button class="block mt-4 text-white bg-purple-500 rounded px-4 py-2">Submit form!</button>
+    </form>
+
+           <p> Go <a href="index.html">Home.</a></p>
+        <p> Learn <a href="Aboutus.html">About us.</a></p>
     </body>
     </html>
